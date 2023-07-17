@@ -3,7 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DependencyInjection.Controllers
 {
-    [Route("salary")]
+    [ApiController]
+    [Route("api/[controller]")]//api/salary
     public class SalaryController : Controller
     {
         private ISalaryCalculator _calculator;
